@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lexend_Deca } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const lexend_Deca = Lexend_Deca({ weight: '400',
+  subsets: ['latin'],});
 
 export const metadata: Metadata = {
   title: "Team Collab",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lexend_Deca.className}>{children}</body>
     </html>
   );
 }
