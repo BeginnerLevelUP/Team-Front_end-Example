@@ -1,5 +1,6 @@
 
 import burger from "@/public/homePageAssests/burger.png"
+import fwArrow from "@/public/homePageAssests/fowardArrow.png"
 import Image from "next/image";
 export default function Home() {
   return (
@@ -25,15 +26,23 @@ export default function Home() {
         </div>
 
         {/* Mobile Top Half */}
-        <div className="flex justify-between">
+        <div className=" lg:hidden flex justify-between">
           <p className="text-3xl text-white">team<span className="text-[#5468E7]">.</span></p>
           <Image src={burger} alt='burger menu icon' className=""></Image>
         </div>
 
 
         {/* Bottom Half */}
-        <div>
-
+        <div className="mr-48 flex flex-col justify-start p-64 space-y-56 ">
+          <div className="text-white space-y-10">
+            <p className="text-8xl">Instant collaboration for remote teams</p>
+           <p className="text-xl">All-in-one place for your remote team to chat, collaborate and track project progress.</p>
+          </div>
+          <div className="flex">
+            <input type="text" placeholder="Email" className="pl-4 pr-20  py-2 rounded"></input>
+            <Image src={fwArrow} alt='Foward Arrow' className="relative right-10"></Image>
+            <button className="border border-[#5468E7] bg-[#5468E7] rounded px-24 py-2  text-[#d3d3d3] ml-24">Get Access</button>
+          </div>
         </div>
       </section>
     </div>
