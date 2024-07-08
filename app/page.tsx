@@ -2,13 +2,15 @@
 import burger from "@/public/homePageAssests/burger.png"
 import fwArrow from "@/public/homePageAssests/fowardArrow.png"
 import Image from "next/image";
+import heroImg from "@/public/homePageAssests/hero-img.png"
+import Body from "@/components/body";
 export default function Home() {
   return (
     <>
     {/* Container */}
     <div className="w-screen h-screen">
       {/* Banner */}
-      <section className="bg-[url('../public/homePageAssests/hero-img.png')] lg:h-full h-1/2  bg-no-repeat bg-cover lg:bg-top  lg:bg-cover lg:bg-100% bg-[85%] flex flex-col p-10">
+      <section className=" lg:h-full h-1/2  bg-no-repeat bg-cover lg:bg-top  lg:bg-cover lg:bg-100% bg-[85%] flex flex-col p-1 " style={{ backgroundImage: `url(${heroImg.src})`}}>
 
         {/* Desktop Top Half */}
         <div className="lg:flex hidden justify-end">
@@ -45,7 +47,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Body></Body>
+
     </div>
+
+
     </>
   );
 }
