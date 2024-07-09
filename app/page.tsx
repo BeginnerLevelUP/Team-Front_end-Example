@@ -4,11 +4,12 @@ import fwArrow from "@/public/homePageAssests/fowardArrow.png"
 import Image from "next/image";
 import heroImg from "@/public/homePageAssests/hero-img.png"
 import Body from "@/components/body";
+import Review from "@/components/review";
 export default function Home() {
   return (
     <>
     {/* Container */}
-    <div className="w-screen h-screen">
+    <div className="w-screen h-screen bg-[#f5f5f5]">
       {/* Banner */}
       <section className=" lg:h-full h-1/2  bg-no-repeat bg-cover lg:bg-top  lg:bg-cover lg:bg-100% bg-[85%] flex flex-col p-1 " style={{ backgroundImage: `url(${heroImg.src})`}}>
 
@@ -49,6 +50,9 @@ export default function Home() {
       </section>
       <Body></Body>
 
+
+      <Review></Review>
+      
     </div>
 
 

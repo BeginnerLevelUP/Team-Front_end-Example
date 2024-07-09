@@ -36,7 +36,7 @@ const Body = () => {
     data.map((promo, index) => 
         index % 2 === 0 ? (
             // Body for even index
-            <section key={index} className="bg-[#f5f5f5] flex p-12">
+            <section key={index} className=" flex p-12">
                 <div className="my-auto">
                     <p className="font-bold text-8xl mb-8">{promo.title}</p>
                     <p className="text-2xl w-[600px]">{promo.des}</p>
@@ -58,7 +58,7 @@ const Body = () => {
                         <Image alt='Forward Arrow' src={fwArrow} className="mx-6" />
                     </div>
                 </div>
-                <Image src={promo.img} alt='Example' className="h-1/2 w-1/2" />
+                <Image src={promo.img} alt='Example' className="h-1/2 w-1/2 mr-36" />
             </section>
         )
     )
