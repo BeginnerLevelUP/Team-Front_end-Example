@@ -42,7 +42,7 @@ export default function Home() {
     </div>
 
     {/* Bottom Half */}
-    <div className="flex flex-col justify-start lg:mr-48 p-4 lg:p-64 lg:space-y-10 space-y-10">
+    <div className="flex flex-col justify-start lg:mr-48 p-4 lg:p-36 lg:space-y-10 space-y-10">
       <div className="text-white space-y-4 lg:space-y-10 lg:mr-10">
         <p className="text-2xl lg:text-8xl">
           Instant collaboration for remote teams
@@ -57,7 +57,7 @@ export default function Home() {
           placeholder="Email" 
           className="pl-4 pr-20 py-2 rounded w-full lg:w-auto"
         />
-        <Image src={fwArrow} alt='Forward Arrow' className="relative right-10 w-6 h-6 mt-4 lg:mt-0 lg:bottom-0 bottom-2" />
+        <Image src={fwArrow} alt='Forward Arrow' className="relative right-10 w-4 h-4 mt-4 lg:mt-0 lg:bottom-0 bottom-2" />
         <button className="border border-[#5468E7] bg-[#5468E7] rounded px-12 lg:px-24 py-2 text-[#d3d3d3] mt-4 lg:mt-0 hidden lg:flex">
           Get Access
         </button>
