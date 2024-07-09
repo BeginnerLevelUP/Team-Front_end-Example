@@ -9,64 +9,64 @@ export default function Home() {
   return (
     <>
     {/* Container */}
-    <div className="w-screen lg:h-screen h-fit bg-[#f5f5f5]">
-{/* Banner */}
-<section 
-  className="h-1/2 lg:h-full bg-no-repeat bg-cover lg:bg-top lg:bg-cover lg:bg-100% bg-[85%] flex flex-col p-10" 
-  style={{ backgroundImage: `url(${heroImg.src})`}}
->
-  {/* Desktop Top Half */}
-  <div className="hidden lg:flex justify-end w-fit h-fit">
-    <p className="text-6xl text-white mr-48">
-      team<span className="text-[#5468E7]">.</span>
-    </p>
-    <nav className="flex justify-between items-center list-none underline text-[#d3d3d3] text-2xl mx-24">
-      <ul className="flex">
-        <li className="mx-6">Product</li>
-        <li className="mx-6">Blog</li>
-        <li className="mx-6">Support</li>
-        <li className="mx-6">Login</li>
-      </ul>
-    </nav>
-    <button className="border border-[#5468E7] bg-[#5468E7] bg-opacity-50 rounded px-20 py-2 text-[#d3d3d3] ml-24">
-      Get Access
-    </button>
-  </div>
-
-  {/* Mobile Top Half */}
-  <div className="flex lg:hidden justify-between items-center mb-16">
-    <p className="text-3xl text-white">
-      team<span className="text-[#5468E7]">.</span>
-    </p>
-    <Image src={burger} alt='burger menu icon' className="w-8 h-8" />
-  </div>
-
-  {/* Bottom Half */}
-  <div className="flex flex-col  justify-start lg:mr-48 p-4 lg:p-64 lg:space-y-10 space-y-10">
-    <div className="text-white space-y-4 lg:space-y-10 lg:mr-10">
-      <p className="text-2xl lg:text-8xl">
-        Instant collaboration for remote teams
+<div className="w-screen lg:h-screen h-fit bg-[#f5f5f5]">
+  {/* Banner */}
+  <section 
+    className="h-1/2 lg:h-full bg-no-repeat bg-cover lg:bg-top lg:bg-cover lg:bg-100% bg-[85%] flex flex-col p-10" 
+    style={{ backgroundImage: `url(${heroImg.src})` }}
+  >
+    {/* Desktop Top Half */}
+    <div className="hidden lg:flex justify-end w-fit h-fit">
+      <p className="text-6xl text-white mr-0">
+        team<span className="text-[#5468E7]">.</span>
       </p>
-      <p className="lg:text-xl">
-        All-in-one place for your remote team to chat, collaborate and track project progress.
+      <nav className="flex justify-between items-center list-none underline text-[#d3d3d3] text-2xl mx-24">
+        <ul className="flex">
+          <li className="mx-6">Product</li>
+          <li className="mx-6">Blog</li>
+          <li className="mx-6">Support</li>
+          <li className="mx-6">Login</li>
+        </ul>
+      </nav>
+      <button className="border border-[#5468E7] bg-[#5468E7] bg-opacity-50 rounded px-20 py-2 text-[#d3d3d3] ml-24">
+        Get Access
+      </button>
+    </div>
+
+    {/* Mobile Top Half */}
+    <div className="flex lg:hidden justify-between items-center mb-16">
+      <p className="text-3xl text-white">
+        team<span className="text-[#5468E7]">.</span>
       </p>
+      <Image src={burger} alt='burger menu icon' className="w-8 h-8" />
     </div>
-    <div className="flex items-center lg:space-x-4">
-      <input 
-        type="text" 
-        placeholder="Email" 
-        className="pl-4 pr-20 py-2 rounded w-full lg:w-auto"
-      />
-      <Image src={fwArrow} alt='Forward Arrow' className="relative right-10  w-12w-6 h-6  mt-4 lg:mt-0 lg:bottom-0 bottom-2" />
-      <button className="border border-[#5468E7] bg-[#5468E7] rounded px-12 lg:px-24 py-2 text-[#d3d3d3] mt-4 lg:mt-0 hidden lg:flex">
+
+    {/* Bottom Half */}
+    <div className="flex flex-col justify-start lg:mr-48 p-4 lg:p-64 lg:space-y-10 space-y-10">
+      <div className="text-white space-y-4 lg:space-y-10 lg:mr-10">
+        <p className="text-2xl lg:text-8xl">
+          Instant collaboration for remote teams
+        </p>
+        <p className="lg:text-xl">
+          All-in-one place for your remote team to chat, collaborate and track project progress.
+        </p>
+      </div>
+      <div className="flex items-center lg:space-x-4">
+        <input 
+          type="text" 
+          placeholder="Email" 
+          className="pl-4 pr-20 py-2 rounded w-full lg:w-auto"
+        />
+        <Image src={fwArrow} alt='Forward Arrow' className="relative right-10 w-6 h-6 mt-4 lg:mt-0 lg:bottom-0 bottom-2" />
+        <button className="border border-[#5468E7] bg-[#5468E7] rounded px-12 lg:px-24 py-2 text-[#d3d3d3] mt-4 lg:mt-0 hidden lg:flex">
+          Get Access
+        </button>
+      </div>
+      <button className="border border-[#5468E7] bg-[#5468E7] rounded px-12 lg:px-24 py-2 text-[#d3d3d3] mt-4 lg:mt-0 lg:hidden flex">
         Get Access
-    </button>
+      </button>
     </div>
-    <button className="border border-[#5468E7] bg-[#5468E7] rounded px-12 lg:px-24 py-2 text-[#d3d3d3] mt-4 lg:mt-0 lg:hidden display:flex">
-        Get Access
-    </button>
-  </div>
-</section>
+  </section>
 
        <Body></Body>
       <Review></Review>
