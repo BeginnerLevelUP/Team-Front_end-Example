@@ -16,8 +16,8 @@ export default function Home() {
   style={{ backgroundImage: `url(${heroImg.src})`}}
 >
   {/* Desktop Top Half */}
-  <div className="hidden lg:flex justify-end">
-    <p className="text-6xl text-white mr-96">
+  <div className="hidden lg:flex justify-end w-fit h-fit">
+    <p className="text-6xl text-white mr-48">
       team<span className="text-[#5468E7]">.</span>
     </p>
     <nav className="flex justify-between items-center list-none underline text-[#d3d3d3] text-2xl mx-24">
