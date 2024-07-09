@@ -49,9 +49,55 @@ export default function Home() {
         </div>
       </section>
       <Body></Body>
-
-
       <Review></Review>
+
+      {/* Footer */}
+      <footer className="flex flex-col bg-[#232340]  px-24 py-20 text-white space-y-24">
+        {/* Top half */}
+        <div className="flex space-x-48">
+          <div className="flex flex-col">
+            <p className="text-2xl text-white mb-4">team<span className="text-[#5468E7]">.</span></p>
+            <p>Collaboration platform for mordern team </p>
+          </div>
+
+          <div className="flex flex-col">
+            <p className="tex-bold text-[#5468E7] mb-8">Company</p>
+            <ul className="space-y-6 list-none">
+              <li>Product</li>
+              <li>Blog</li>
+              <li>Support</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col">
+            <p className="tex-bold text-[#5468E7] mb-8">Contact us</p>
+            <ul className="space-y-6 list-none">
+              <li>
+                <a href="mailto:info@teamapp.com">info@teamapp.com</a>
+              </li>
+              <li>
+                <a href="tel:1-800-200-300">1-800-200-300</a>
+              </li>
+              <li>1010 Sunset Blv.
+              Palo Alto, California</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col">
+            <p className="tex-bold text-[#5468E7] mb-8">Contact us</p>
+            <p>Subscribe to the newsletter</p>
+            <div className="flex">
+            <input type="text" placeholder="Email" className="pl-4 pr-20  py-2 rounded opacity-50"></input>
+            <Image src={fwArrow} alt='Foward Arrow' className="relative right-10"></Image>
+          </div>
+          </div>
+        </div>
+
+        {/* Bottom half */}
+        <div className="flex justify-start">
+            <p>© Copyright Team Inc.</p>
+        </div>
+      </footer>
       
     </div>
 
