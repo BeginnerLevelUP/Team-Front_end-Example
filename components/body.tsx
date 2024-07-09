@@ -36,29 +36,29 @@ const Body = () => {
     data.map((promo, index) => 
         index % 2 === 0 ? (
             // Body for even index
-            <section key={index} className=" flex p-12">
-                <div className="my-auto">
-                    <p className="font-bold text-8xl mb-8">{promo.title}</p>
-                    <p className="text-2xl w-[600px]">{promo.des}</p>
+            <section key={index} className="lg:flex-row flex flex-col-reverse lg:p-12 p-6  w-screen space-y-8">
+                <div className="lg:my-auto">
+                    <p className="font-bold lg:text-8xl lg:mb-8 text-4xl my-4" >{promo.title}</p>
+                    <p className="lg:text-2xl lg:w-[600px]">{promo.des}</p>
                     <div className="flex my-4">
                         <a className="font-bold underline text-[#5468e7]">Learn More</a>
                         <Image alt='Forward Arrow' src={fwArrow} className="mx-6" />
                     </div>
                 </div>
-                <Image src={promo.img} alt='Example' className="h-1/2 w-1/2" />
+                <Image src={promo.img} alt='Example' className="lg:h-1/2 lg:w-1/2 h-[400px]" />
             </section>
         ) : (
             // Body for odd index
-            <section key={index} className="bg-[#f5f5f5] flex p-12 flex-row-reverse">
-                <div className="my-auto">
-                    <p className="font-bold text-8xl mb-8">{promo.title}</p>
-                    <p className="text-2xl w-[600px]">{promo.des}</p>
+            <section key={index} className="flex lg:p-12 p-6 lg:flex-row-reverse flex-col-reverse">
+                <div className="lg:my-auto">
+                    <p className="font-bold lg:text-8xl text-4xl my-4 lg:mb-8">{promo.title}</p>
+                    <p className="lg:text-2xl lg:w-[600px] ">{promo.des}</p>
                     <div className="flex my-4">
                         <a className="font-bold underline text-[#5468e7]">Learn More</a>
                         <Image alt='Forward Arrow' src={fwArrow} className="mx-6" />
                     </div>
                 </div>
-                <Image src={promo.img} alt='Example' className="h-1/2 w-1/2 mr-36" />
+                <Image src={promo.img} alt='Example' className="lg:h-1/2 lg:w-1/2 lg:mr-36 h-[400px] " />
             </section>
         )
     )

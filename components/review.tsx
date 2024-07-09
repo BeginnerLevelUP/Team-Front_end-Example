@@ -29,10 +29,10 @@ const Review = () => {
 
   return (
     <>
-    <p className="font-bold text-8xl my-24 text-center">What people say about Team</p>
-    <div className="flex justify-center">
+    <p className="font-bold lg:text-8xl text-4xl lg:my-24 my-12 text-center lg:p-0 p-2">What people say about Team</p>
+    <div className="flex lg:flex-row flex-col justify-center">
             {data.map((review, index) => (
-        <div key={index} className="bg-[#f5f5f5] h-[400px] w-[400px] flex flex-col justify-start p-6 space-y-16 mx-24">
+        <div key={index} className="bg-white lg:h-[400px] lg:w-[400px] flex flex-col justify-start p-6 space-y-16 lg:mx-24 mx-12 my-12 lg:my:0">
           <Image src={stars} alt='stars' className="my-4" />
           <p className="my-4">{review.review}</p>
           <div className="flex">
